@@ -15,7 +15,7 @@ def runs(self):
         if hl.tag == qn('w:hyperlink'):
             for r in hl:
                 if r.tag == qn('w:r'):
-                    lst.append(Run(r, self));
+                    lst.append(Run(r, self))
     return lst
 
 Paragraph.runs = property(runs)
